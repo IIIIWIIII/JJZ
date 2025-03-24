@@ -1,58 +1,213 @@
-/* 全局样式 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* 白色背景 */
-    color: #333; /* 黑色字体，提高可读性 */
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* 头部 */
-header {
-    background: #4CAF50;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1200px;
+}
+
+.header {
+    background-color: #007bff; /* 主题蓝色，可根据图片调整 */
     color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+}
+
+.header .tagline {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.hero {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.products {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.products h2,
+.join-us h2,
+.about-us h2,
+.contact h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+.product-item img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button.primary:hover {
+    background-color: #0056b3;
+}
+
+.join-us {
+    background-color: #f0f8ff; /* 浅蓝色背景，可调整 */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.join-us p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.about-us {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.about-content {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.contact {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
-/* 轮播图 */
-#banner {
-    text-align: center;
-    padding: 50px;
-    background-color: #4CAF50; /* 纯色背景，确保文字可见 */
-    color: white;
-}
-
-/* 关于我们 */
-#about {
-    padding: 40px;
-    text-align: center;
-}
-
-/* 服务内容 */
-#services {
-    padding: 40px;
-    text-align: center;
-}
-
-/* 合作伙伴 */
-#partners {
-    padding: 40px;
-    text-align: center;
-}
-
-/* 联系我们 */
-#contact {
-    padding: 40px;
-    text-align: center;
-}
-
-/* 底部 */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
+.contact-info div {
+    background-color: #fff;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.contact-info h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image, .about-text {
+        flex: 1;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
