@@ -1,82 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>金九州公司 | 北京小区售水机 & 啤酒总代理</title>
-    <style>
-        /* 基础样式 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .header {
-            background: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        .logo {
-            width: 200px;
-            height: auto;
-            margin: 20px;
-        }
-        .services {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin: 20px;
-        }
-        .footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .cta-button:hover {
-            background-color: #3e8e41;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金九州公司 | 健康饮水专家</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>金九州公司</h1>
-        <img src="logo.png" class="logo" alt="公司LOGO">
-    </div>
-
-    <div class="content">
-        <div class="services">
-            <h2>我们的服务</h2>
-            <p><strong>小区智能售水机：</strong>我们与多家物业公司深度合作，在北京市多个小区成功铺设了智能售水机，提供24小时现制现售饮用水服务。扫码即取，方便快捷，确保水质安全，深受居民信赖。</p>
-            <p><strong>崂迈啤酒总代理：</strong>作为北京地区崂迈啤酒的独家总代理，我们为您提供高品质的啤酒产品。精选本地精酿，口感纯正，满足您的需求。无论是家庭聚会还是商务宴请，我们都为您提供最佳选择。</p>
+    <!-- 头部 -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="金九州公司LOGO">
         </div>
-        <img src="water-beer.jpg" alt="售水机和啤酒" style="max-width: 100%; height: auto;">
-        
-        <!-- 合作按钮 -->
-        <a href="#contact" class="cta-button">立即联系合作</a>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#services">服务内容</a></li>
+                <li><a href="#partners">合作伙伴</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="footer">
-        <p>联系方式：138-XXXX-XXXX</p>
-        <p>地址：XX市XX区XX路XX号</p>
-        <p>合法合规经营：本公司依法取得营业执照，开展日用百货销售、互联网销售、机械设备销售、食品销售等业务，具体经营项目以相关部门批准文件为准。</p>
-    </div>
+    <!-- 轮播图 -->
+    <section id="banner">
+        <img src="banner.jpg" alt="健康饮水解决方案">
+        <h1>金九州公司</h1>
+        <p>您的健康饮水专家</p>
+        <a href="#contact" class="cta-button">立即联系</a>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about">
+        <h2>关于我们</h2>
+        <p>金九州公司是一家专注于健康饮水解决方案的企业，致力于为客户提供高品质的饮用水设备和服务。</p>
+        <img src="about-us.jpg" alt="公司团队合影">
+    </section>
+
+    <!-- 服务内容 -->
+    <section id="services">
+        <h2>我们的服务</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="water-dispenser.jpg" alt="智能售水机">
+                <h3>小区智能售水机</h3>
+                <p>提供24小时现制现售饮用水服务，扫码即取，方便快捷。</p>
+            </div>
+            <div class="service-item">
+                <img src="beer.jpg" alt="啤酒">
+                <h3>崂迈啤酒总代理</h3>
+                <p>精选本地精酿，口感纯正，满足您的需求。</p>
+            </div>
+            <div class="service-item">
+                <img src="water-purifier.jpg" alt="净水器">
+                <h3>净水设备销售</h3>
+                <p>为您提供高品质的净水设备，保障饮水安全。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴 -->
+    <section id="partners">
+        <h2>合作伙伴</h2>
+        <div class="partner-logos">
+            <img src="partner1.png" alt="合作伙伴1">
+            <img src="partner2.png" alt="合作伙伴2">
+            <img src="partner3.png" alt="合作伙伴3">
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact">
+        <h2>联系我们</h2>
+        <form>
+            <input type="text" placeholder="姓名">
+            <input type="email" placeholder="邮箱">
+            <textarea placeholder="留言"></textarea>
+            <button>提交</button>
+        </form>
+        <div class="contact-info">
+            <p>联系电话：138-XXXX-XXXX</p>
+            <p>地址：XX市XX区XX路XX号</p>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer>
+        <p>© 2023 金九州公司 版权所有</p>
+    </footer>
 </body>
 </html>
