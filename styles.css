@@ -1,28 +1,53 @@
 /* 全局样式 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* 字体 */
     margin: 0;
     padding: 0;
-    background-color: #fff; /* 白色背景 */
-    color: #333; /* 黑色字体，提高可读性 */
+    background-color: #e6f7ff; /* 浅蓝色背景 */
+    color: #003366; /* 深蓝色字体 */
 }
 
 /* 头部 */
 header {
-    background: #4CAF50;
-    color: white;
+    background: #4CAF50; /* 绿色背景 */
+    color: white; /* 白色字体 */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+.logo img {
+    width: 150px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: white; /* 导航链接字体颜色 */
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* 轮播图 */
 #banner {
     text-align: center;
     padding: 50px;
-    background-color: #4CAF50; /* 纯色背景，确保文字可见 */
-    color: white;
+    background-color: #4CAF50; /* 绿色背景 */
+    color: white; /* 白色字体 */
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* 按钮颜色：亮蓝色 */
+    color: white; /* 按钮字体颜色 */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.cta-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时按钮颜色变深 */
 }
 
 /* 关于我们 */
@@ -36,6 +61,18 @@ header {
     padding: 40px;
     text-align: center;
 }
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.service-item {
+    text-align: center;
+    padding: 20px;
+    background: white; /* 服务卡片背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 /* 合作伙伴 */
 #partners {
@@ -47,12 +84,13 @@ header {
 #contact {
     padding: 40px;
     text-align: center;
+    background-color: #f5f5f5; /* 浅灰色背景 */
 }
 
 /* 底部 */
 footer {
-    background: #333;
-    color: white;
+    background: #333; /* 黑色背景 */
+    color: white; /* 白色字体 */
     text-align: center;
     padding: 20px;
 }
