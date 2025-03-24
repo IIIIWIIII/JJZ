@@ -1,22 +1,3 @@
-/* 全局图片样式 */
-img {
-    max-width: 100%; /* 确保图片不会超出容器 */
-    height: auto; /* 自动调整高度以保持比例 */
-}
-
-/* LOGO 图片 */
-.logo img {
-    width: 150px; /* 固定 LOGO 宽度 */
-    height: auto; /* 自动调整高度 */
-}
-
-/* 合作伙伴图片 */
-.partner-logos img {
-    width: 100px; /* 固定合作伙伴图片宽度 */
-    height: auto; /* 自动调整高度 */
-    margin: 10px; /* 添加间距，让图片之间有间隔 */
-}
-
 /* 全局样式 */
 body {
     font-family: Arial, sans-serif; /* 字体 */
@@ -52,9 +33,18 @@ nav a {
 /* 轮播图 */
 #banner {
     text-align: center;
-    padding: 50px;
+    padding: 80px 20px; /* 增加内边距，让内容更显眼 */
     background-color: #4CAF50; /* 绿色背景 */
     color: white; /* 白色字体 */
+}
+#banner h1 {
+    font-size: 48px; /* 放大公司名称 */
+    font-weight: bold; /* 加粗字体 */
+    margin-bottom: 10px; /* 调整与副标题的间距 */
+}
+#banner p {
+    font-size: 20px; /* 设置副标题字体大小 */
+    margin-bottom: 20px; /* 调整与按钮的间距 */
 }
 .cta-button {
     display: inline-block;
@@ -97,6 +87,11 @@ nav a {
 #partners {
     padding: 40px;
     text-align: center;
+}
+.partner-logos img {
+    width: 100px; /* 统一合作伙伴图片宽度 */
+    height: auto; /* 自动调整高度以保持比例 */
+    margin: 10px; /* 添加间距 */
 }
 
 /* 联系我们 */
