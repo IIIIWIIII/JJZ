@@ -1,134 +1,92 @@
-/* 基础样式 */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金九州公司 | 健康饮水专家</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="金九州公司LOGO">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#services">服务内容</a></li>
+                <li><a href="#partners">合作伙伴</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* 头部 */
-header {
-    background: #4CAF50;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-.logo img {
-    width: 150px;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+    <!-- 轮播图 -->
+    <section id="banner">
+        <img src="banner.jpg" alt="健康饮水解决方案">
+        <h1>金九州公司</h1>
+        <p>您的健康饮水专家</p>
+        <a href="#contact" class="cta-button">立即联系</a>
+    </section>
 
-/* 轮播图 */
-#banner {
-    text-align: center;
-    padding: 50px;
-    background-image: url('banner.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-#banner h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-.cta-button:hover {
-    background-color: #3e8e41;
-}
+    <!-- 关于我们 -->
+    <section id="about">
+        <h2>关于我们</h2>
+        <p>金九州公司是一家专注于健康饮水解决方案的企业，致力于为客户提供高品质的饮用水设备和服务。</p>
+        <img src="about-us.jpg" alt="公司团队合影">
+    </section>
 
-/* 关于我们 */
-#about {
-    padding: 40px;
-    text-align: center;
-}
-#about img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
+    <!-- 服务内容 -->
+    <section id="services">
+        <h2>我们的服务</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="water-dispenser.jpg" alt="智能售水机">
+                <h3>小区智能售水机</h3>
+                <p>提供24小时现制现售饮用水服务，扫码即取，方便快捷。</p>
+            </div>
+            <div class="service-item">
+                <img src="beer.jpg" alt="啤酒">
+                <h3>崂迈啤酒总代理</h3>
+                <p>精选本地精酿，口感纯正，满足您的需求。</p>
+            </div>
+            <div class="service-item">
+                <img src="water-purifier.jpg" alt="净水器">
+                <h3>净水设备销售</h3>
+                <p>为您提供高品质的净水设备，保障饮水安全。</p>
+            </div>
+        </div>
+    </section>
 
-/* 服务内容 */
-#services {
-    padding: 40px;
-    text-align: center;
-}
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.service-item {
-    text-align: center;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.service-item img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
+    <!-- 合作伙伴 -->
+    <section id="partners">
+        <h2>合作伙伴</h2>
+        <div class="partner-logos">
+            <img src="partner1.png" alt="合作伙伴1">
+            <img src="partner2.png" alt="合作伙伴2">
+            <img src="partner3.png" alt="合作伙伴3">
+        </div>
+    </section>
 
-/* 合作伙伴 */
-#partners {
-    padding: 40px;
-    text-align: center;
-}
-.partner-logos img {
-    width: 100px;
-    height: auto;
-    margin: 10px;
-}
+    <!-- 联系我们 -->
+    <section id="contact">
+        <h2>联系我们</h2>
+        <form>
+            <input type="text" placeholder="姓名">
+            <input type="email" placeholder="邮箱">
+            <textarea placeholder="留言"></textarea>
+            <button>提交</button>
+        </form>
+        <div class="contact-info">
+            <p>联系电话：138-XXXX-XXXX</p>
+            <p>地址：XX市XX区XX路XX号</p>
+        </div>
+    </section>
 
-/* 联系我们 */
-#contact {
-    padding: 40px;
-    text-align: center;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-input, textarea {
-    padding: 10px;
-    width: 100%;
-}
-button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #3e8e41;
-}
-
-/* 底部 */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+    <!-- 底部 -->
+    <footer>
+        <p>© 2023 金九州公司 版权所有</p>
+    </footer>
+</body>
+</html>
