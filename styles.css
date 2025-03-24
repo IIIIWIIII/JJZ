@@ -1,23 +1,58 @@
-/* 设置全局字体颜色 */
+/* 全局样式 */
 body {
-    color: #333; /* 深灰色，提高可读性 */
-}
-
-/* 设置背景颜色 */
-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #fff; /* 白色背景 */
+    color: #333; /* 黑色字体，提高可读性 */
 }
 
-/* 特定区域的字体颜色 */
+/* 头部 */
 header {
     background: #4CAF50;
-    color: white; /* 头部导航栏的字体颜色 */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
+/* 轮播图 */
 #banner {
-    color: white; /* 轮播图区域的字体颜色 */
+    text-align: center;
+    padding: 50px;
+    background-color: #4CAF50; /* 纯色背景，确保文字可见 */
+    color: white;
 }
 
-#about, #services, #partners, #contact {
-    color: #333; /* 主要内容区域的字体颜色 */
+/* 关于我们 */
+#about {
+    padding: 40px;
+    text-align: center;
+}
+
+/* 服务内容 */
+#services {
+    padding: 40px;
+    text-align: center;
+}
+
+/* 合作伙伴 */
+#partners {
+    padding: 40px;
+    text-align: center;
+}
+
+/* 联系我们 */
+#contact {
+    padding: 40px;
+    text-align: center;
+}
+
+/* 底部 */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
