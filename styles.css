@@ -1,3 +1,22 @@
+/* 全局图片样式 */
+img {
+    max-width: 100%; /* 确保图片不会超出容器 */
+    height: auto; /* 自动调整高度以保持比例 */
+}
+
+/* LOGO 图片 */
+.logo img {
+    width: 150px; /* 固定 LOGO 宽度 */
+    height: auto; /* 自动调整高度 */
+}
+
+/* 合作伙伴图片 */
+.partner-logos img {
+    width: 100px; /* 固定合作伙伴图片宽度 */
+    height: auto; /* 自动调整高度 */
+    margin: 10px; /* 添加间距，让图片之间有间隔 */
+}
+
 /* 全局样式 */
 body {
     font-family: Arial, sans-serif; /* 字体 */
